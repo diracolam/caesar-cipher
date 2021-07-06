@@ -1,0 +1,5 @@
+def cypher str, amt
+  str.chars.map{|e|  (e.ord + amt%128).chr}.join.to_s
+end
+
+puts cypher 'bob',1
